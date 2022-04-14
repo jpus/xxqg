@@ -1,5 +1,5 @@
-# Adblock_Plus_List
-Adblock_Plus_List for small_5 openwrt
+# Adblock_Plus for small_5 openwrt
+openwrt的Adblock_Plus广告过滤插件，由于作者删除了数据库地址的文件，造成插件无法启动，以下是修复的方法
 
 # 使用方法一（Win自带SSH可用）
 
@@ -37,6 +37,10 @@ ssh进入路由器
 
 ![FA8FC319829E150ABFCBC06790D5034C](https://user-images.githubusercontent.com/48589001/140941431-63667503-442a-4241-bd72-aa47feabf1ee.png)
 
+使用注意事项
+
 ![photo_2022-04-03_02-10-59](https://user-images.githubusercontent.com/78049266/163384931-0587cf0a-ece9-4bc3-b99c-e90bf9bc0d24.jpg)
+
+建议在第三方规则加一个 https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt
 
 
