@@ -1,3 +1,4 @@
 # 高颜值的第三方网易云播放器YesPlayMusic   [多终端下载地址](https://github.com/qier222/YesPlayMusic/releases)		[网页版](https://music.qier222.com/)
 # [解锁网易云音乐客户端变灰歌曲UnblockNeteaseMusic](https://github.com/UnblockNeteaseMusic/server)
 # [洛雪音乐助手桌面版](https://github.com/lyswhut/lx-music-desktop)
+# Unlock Music 音乐解锁 [离线版](https://github.com/unlock-music/unlock-music/releases/tag/v1.10.0)    [项目新域名](https://demo.unlock-music.dev/)    [Telegram](https://t.me/unlock_music_chat)
