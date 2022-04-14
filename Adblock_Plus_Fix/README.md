@@ -37,3 +37,6 @@ ssh进入路由器
 
 ![FA8FC319829E150ABFCBC06790D5034C](https://user-images.githubusercontent.com/48589001/140941431-63667503-442a-4241-bd72-aa47feabf1ee.png)
 
+![photo_2022-04-03_02-10-59](https://user-images.githubusercontent.com/78049266/163384931-0587cf0a-ece9-4bc3-b99c-e90bf9bc0d24.jpg)
+
+
