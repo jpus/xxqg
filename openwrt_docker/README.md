@@ -29,7 +29,7 @@ docker run -tid --name adguardhome --net=host --restart always -v /opt/adguard/w
 docker run -tid --name baotamini -p 80:80 -p 8888:8888 --net=host --privileged=true --shm-size=1g --restart always -v baota_www:/www -v /宿主机/自定义/某个目录/wwwroot:/www/wwwroot baiyuetribe/baota_mini
 # 宝塔完整版
 docker run -tid --name baota -p 80:80 -p 8888:8888 --net=host --privileged=true --shm-size=1g --restart always -v baota_www:/www -v /宿主机/自定义/某个目录/wwwroot:/www/wwwroot pch18/baota
-# [openwrt零基础一键搭建宝塔、论坛、社区、网校、视频网站、博客、社交、发卡网站等等](https://www.right.com.cn/forum/thread-4061094-1-1.html）
+# [openwrt零基础一键搭建宝塔、论坛、社区、网校、视频网站、博客、社交、发卡网站等等](https://www.right.com.cn/forum/thread-4061094-1-1.html)
 # [使用docker安装完整版的ubuntu系统](https://blog.51cto.com/u_15127555/3641937) 注意apt install net-tooles安装报错请改用apt-get install net-tooles
 
  
