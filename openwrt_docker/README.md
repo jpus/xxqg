@@ -15,7 +15,7 @@ docker run -d \
   --restart=always \
   -v /opt/techxuexi-web/xuexi/user:/xuexi/user
   docker.mirror.aliyuncs.com/techxuexi/techxuexi-amd64
-# 青龙面板
+# [青龙面板](https://github.com/hongke120/qlym)
 docker run -dit \
   -v /opt/ql:/ql/data \
   -p 5700:5700 \
