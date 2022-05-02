@@ -16,9 +16,11 @@
 
 [LingMaxDNS](https://github.com/zanzhz1101/LingMaxDNS) * [Padavan使用方法](https://www.right.com.cn/forum/thread-8210921-1-1.html) * [openwrt等使用方法](https://www.right.com.cn/forum/thread-8137820-1-1.html)
 
-[LingMaxProxy PC nodejs版](https://www.right.com.cn/forum/thread-4083699-1-1.html) -》 [下载地址](https://wwe.lanzoux.com/iMLwQm811ah)
+[LingMaxProxy PC nodejs版](https://www.right.com.cn/forum/thread-4083699-1-1.html) * [下载地址](https://wwe.lanzoux.com/iMLwQm811ah)
 
 [github加速器](https://github.com/dotnetcore/FastGithub)
+
+[GitHub Proxy代理加速](https://ghproxy.com)
 
 [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome)
 
