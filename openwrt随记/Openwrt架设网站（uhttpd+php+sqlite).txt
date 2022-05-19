@@ -1,0 +1,23 @@
+一、安装程序
+opkg update
+opkg install php8 php8-cgi php8-mod-ctype php8-mod-pdo php8-mod-pdo-sqlite php8-mod-session php8-mod-sqlite3 php8-mod-tokenizer php8-mod-xml
+-------------------------
+二、修改/etc/php.ini
+将
+;short_open_tag = Off
+改为
+short_open_tag = On
+将
+doc_root = "/www"
+改为
+;doc_root = "/www"
+------------------------------
+三、在/etc/config/uhttpd最后添加：(88为访问端口，/mnt/sda3/www为放置网页的目录，这些都可以修改。)
+config uhttpd web
+        list listen_http 0.0.0.0:88
+        option home /mnt/sda3/www
+        option index_page index.php
+        list interpreter ".php=/usr/bin/php-cgi"
+-------------------------------------------------------------------
+四、重启uhttpd：
+/etc/init.d/uhttpd restart
