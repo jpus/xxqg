@@ -1,0 +1,22 @@
+mixin: # object
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+#--omitted--
+default-nameserver:
+   - 119.29.29.29
+   - 223.5.5.5
+#--omitted--
+nameserver:
+   - https://doh.pub/dns-query
+   - https://dns.alidns.com/dns-query
+#--omitted--
+fallback:
+   - https://1.1.1.1/dns-query
+   - https://dns.google/dns-query
+fallback-filter:
+   geoip: true
+   geoip-code: CN
+   ipcidr:
+     - 240.0.0.0/4
