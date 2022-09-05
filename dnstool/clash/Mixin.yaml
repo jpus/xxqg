@@ -1,0 +1,90 @@
+#
+# 使用clash配置文件关键字则覆盖原配置
+#
+# removed-rules    循环匹配rules数组每行,符合则移除当前行 (此规则请放最前面)
+#
+# append-rules    数组合并至原配置rules数组后
+# prepend-rules   数组合并至原配置rules数组前
+# append-proxies      数组合并至原配置proxies数组后
+# prepend-proxies     数组合并至原配置proxies数组前
+# append-proxy-groups     数组合并至原配置proxy-groups数组后
+# prepend-proxy-groups    数组合并至原配置proxy-groups数组前
+# append-rule-providers     数组合并至原配置rule-providers数组后
+# prepend-rule-providers    数组合并至原配置rule-providers数组前
+#
+
+dns:
+  enable: true
+  enhanced-mode: fake-ip
+  nameserver:
+    - 114.114.114.114
+    - 223.5.5.5
+    - 8.8.8.8
+  fallback: []
+  fake-ip-filter:
+    - +.stun.*.*
+    - +.stun.*.*.*
+    - +.stun.*.*.*.*
+    - +.stun.*.*.*.*.*
+    - "*.n.n.srv.nintendo.net"
+    - +.stun.playstation.net
+    - xbox.*.*.microsoft.com
+    - "*.*.xboxlive.com"
+    - "*.msftncsi.com"
+    - "*.msftconnecttest.com"
+    - WORKGROUP
+removed-rules:
+  - MATCH,
+  - Others,
+prepend-proxies:
+  - {name: Server1, server: 1.server.xyz, port: 443, type: vmess, uuid: 54314386-59d7-4c80-80e0-3661ad56869b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /abc/, headers: {Host: 1.server.xyz}}}
+  - {name: Server2, server: 2.server.xyz, port: 443, type: vmess, uuid: 54314386-59d7-4c80-80e0-3661ad56869b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /abc/, headers: {Host: 2.server.xyz}}}
+prepend-rules:
+        - "DOMAIN-SUFFIX,example1.com,DIRECT"
+        - "DOMAIN-SUFFIX,example2.com,DIRECT"
+        - "DOMAIN-SUFFIX,example13.com,DIRECT"
+prepend-proxy-groups:
+    - name: myGroup
+      type: fallback
+      url: "http://www.gstatic.com/generate_204"
+      interval: 300
+      proxies:
+        - DIRECT
+    - name: myGroup2
+      type: fallback
+      url: "http://www.gstatic.com/generate_204"
+      interval: 300
+      proxies:
+        - DIRECT
+append-proxies:
+  - {name: Server3, server: 3.server.xyz, port: 443, type: vmess, uuid: 54314386-59d7-4c80-80e0-3661ad56869b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /abc/, headers: {Host: 3.server.xyz}}}
+  - {name: Server4, server: 4.server.xyz, port: 443, type: vmess, uuid: 54314386-59d7-4c80-80e0-3661ad56869b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /abc/, headers: {Host: 4.server.xyz}}}
+append-rules:
+        - DOMAIN-SUFFIX,append11.com,DIRECT
+        - DOMAIN-SUFFIX,append22.com,DIRECT
+        - DOMAIN-SUFFIX,append33.com,DIRECT
+        - MATCH,\U0001F3AF 全球直连
+append-proxy-groups:
+    - name: myGroupappend
+      type: fallback
+      url: "http://www.gstatic.com/generate_204"
+      interval: 300
+      proxies:
+        - DIRECT
+    - name: myGroupappend2
+      type: fallback
+      url: "http://www.gstatic.com/generate_204"
+      interval: 300
+      proxies:
+        - DIRECT
+append-rule-providers:
+  - apple:
+    behavior: "domain"
+    type: http
+    url: "url"
+    interval: 3600
+    path: ./apple.yaml
+  - microsoft:
+    behavior: "domain"
+    type: file
+    path: /microsoft.yaml
