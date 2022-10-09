@@ -1,0 +1,18 @@
+! AdGuard使用，放行白名单
+! 放行了微软live及淘宝的规则
+@@||g.live.com^
+@@||s.click.taobao.com^
+@@||tns.simba.taobao.com^
+@@||audid-api.taobao.com^
+@@||gaode-jmacs.m.taobao.com^
+@@||adash.man.aliyuncs.com^
+@@||cdn.ynuf.aliapp.org^
+@@||umengjmacs.m.taobao.com^
+@@||mon11-misc-lf.toutiaoapi.com^
+@@||amdcopen.m.taobao.com^
+@@||umengacs.m.taobao.com^
+@@||tunion-api.m.taobao.com^
+@@||odin.re.taobao.com^
+@@||adashx.m.taobao.com^
+@@||ipassport.ele.me^
+@@||wl.jd.com^
