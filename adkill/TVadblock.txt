@@ -1,0 +1,47 @@
+! Title: 电视广告屏蔽
+! Description: 从路由器端屏蔽电视广告
+! AdGuard使用，建议与AdGuard内置规则CHN: anti-AD一并使用
+! AdGuard内置规则CHN: anti-AD，https://anti-ad.net/easylist.txt
+||ad.mi.com^
+||ad.xiaomi.com^
+||ad1.xiaomi.com^
+||tat.pandora.xiaomi.com^
+||api.ad.xiaomi.com^
+||sdkconfig.ad.xiaomi.com^
+||upgrade.mishop.pandora.xiaomi.com^
+||logonext.tv.kuyun.com^
+||config.kuyun.com^
+||data.mistat.xiaomi.com^
+||gvod.aiseejapp.atianqi.com^
+||ad.hpplay.cn^
+||519332DA.rtc.youme.im^
+||g.dtv.cn.miaozhen.com^
+||android.bugly.qq.com^
+||alog.umeng.com^
+||tv.aiseet.atianqi.com^
+||vv.play.aiseet.atianqi.com^
+||pandora.mi.com^
+||tvapi.kuyun.com^
+||assistant.pandora.xiaomi.com^
+||tracking.miui.com^
+||omgmta.play.aiseet.atianqi.com^
+||misc.in.duokanbox.com^
+||86file.megajoy.com^
+||86get.joy.cn^
+||86log.joy.cn^
+||atm.youku.com^
+||Fvid.atm.youku.com^
+||valo.atm.youku.com^
+||speed.lstat.youku.com^
+||urchin.lstat.youku.com^
+||stat.youku.com^
+||static.lstat.youku.com^
+||vid.atm.youku.com^
+||walp.atm.youku.com^
+||cctv.adsunion.com^
+||drmcmm.baidu.com^
+||afp.qiyi.com^
+||focusbaiduafp.allyes.com^
+||a.cctv.com^
+||ad.cctv.com^
+||spcode.baidu.com^
