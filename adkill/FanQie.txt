@@ -1,0 +1,27 @@
+!
+! Title: FanQieNovel 番茄小说广告屏蔽
+! Description: 从路由器端屏蔽番茄小说广告
+! 番茄小说去章内末广告(且用且珍惜，规则疑似通用于字节跳动系)
+!
+!
+||dig.bdurl.net^
+||p*-ad-sign.byteimg.com^
+||i.snssdk.com^$important
+||i-lq.snssdk.com^$important
+||zijieapi.com^
+||polaris*-normal-lq.zijieapi.com^
+||activity-ag.awemeughun.com^$important
+||tnc3-alisc*.snssdk.com^
+||security-lq.snssdk.com^$important
+||is.snssdk.com^$important
+||v*-novelapp.ixigua.com^
+||v*-default.ixigua.com^
+||msync-im1-vip6-std.easemob.com^$important
+||apd-pcdnwxlogin.teg.tencent-cloud.net^$important
+||api.iegadp.qq.com^$important
+||sf*-ttcdn-tos.pstatp.com^
+||pglstatp-toutiao.com^
+||byteorge.com^
+||bytegoofy.com^
+||bytedance.com^
+||pangolin-sdk-toutiao.com^
