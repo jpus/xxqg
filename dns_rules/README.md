@@ -16,3 +16,6 @@
 ------------------------
 # flyhigherpi   [梅林路由器clash订阅规则](https://github.com/flyhigherpi/merlinclash_clash_related)
 ------------------------
+# 收集的一些公共DNS   
+[一](https://adguard-dns.io/kb/general/dns-providers/?clid=ZwvOEd--m82jyH&utm_campaign=dns_kb_providers&utm_medium=ui&utm_source=home) [二](https://www.cccitu.com/2205354.html) [三](https://github.com/pengelana/blocklist) [四](https://github.com/pengelana/jp.tiar.app)
+------------------------
