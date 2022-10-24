@@ -10,7 +10,7 @@
 ------------------------
 # adguardhome_upstream_dns
 
-[adguardhome通过设置上游dns的方式进行分流](https://github.com/jpus/adguardhome_upstream_dns)
+[adguardhome通过设置上游dns的方式进行分流](https://github.com/rxvb/adguardhome_upstream_dns)
 
 微软PC端adguardhome将文件放在主程序目录，打开AdGuardHome.yaml，找到upstream_dns_file: ""注意前方有空格，将双引号改成upstream_dns_file，保存。
 ------------------------
