@@ -1,4 +1,11 @@
 ! AdGuard使用，放行白名单
+! 夸克浏览器看小说老是被拦截，并且进不去阅读模式
+@@||default.cn.zb.wagbridge.ad.alibabacorp.com.gds.alibabadns.com
+@@||default.cn.zb.wagbridge.ad.alibabacorp.com.gds.alibabadns.com^$important
+@@||ucsec.ucweb.com^$important
+@@||uc9.ucweb.com^$important
+@@||ucus.ucweb.com^$important
+@@||default.cn.nt.wagbridge.ad.alibabacorp.com.gds.alibabadns.com^$important
 ! 放行了微软live及淘宝、支付宝的规则
 @@||g.live.com^
 @@||s.click.taobao.com^
