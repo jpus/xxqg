@@ -8,6 +8,10 @@
 ! 酷安
 ||api2.coolapk.com/v6/feed/detail$replace=/"include_goods_ids":\[.*?]\,"include_goods":\[.*?]\,/ /'
 ||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/'
+||coolapk.com/v6/feed/detail?$replace=/extra_entities//
+||coolapk.com/v6/page/dataList?$replace=/extra_entities//
+||coolapk.com/^$replace=/{"entityTemplate":imageCarouselCard_1.*?}\,//
+||coolapk.com/^$replace=/{"title":\u4eca\u65e5\u9177\u5b89.*?}\,//coolapk.com/v6/page/dataList?$replace=/extra_entities//
 ! APP类
 ||up-hl.3g.qq.com^
 ! 头条
