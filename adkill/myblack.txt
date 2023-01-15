@@ -1,0 +1,19 @@
+! 反跟踪
+||appcenter.ms^
+||app-measurement.com^
+||firebase.io^
+! 广点通.穿山甲.华为
+||img14.360buyimg.com^
+||pp.myapp.com^
+! 酷安
+||api2.coolapk.com/v6/feed/detail$replace=/"include_goods_ids":\[.*?]\,"include_goods":\[.*?]\,/ /'
+||api2.coolapk.com/v6/feed/detail$replace=/\,"detailSponsorCard":{.*}/}}/'
+! APP类
+||up-hl.3g.qq.com^
+! 头条
+||activitybyte.com^
+||bdactivity.com^
+||byteactivity.com^
+||wukongwenda.cn^
+||wtturl.cn^
+||toutiaohao.net^
