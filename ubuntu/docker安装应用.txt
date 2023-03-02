@@ -1,0 +1,12 @@
+设置docker开机自启动
+sudo systemctl enable docker.service
+列出所有的容器
+docker container ls
+rm将移除容器，-f将在移除容器之前强制停止容器。(卸载portainer为例)
+docker container rm -f portainer
+安装ddns-go
+docker volume create ddns-go_data
+sudo docker run --name ddns-go -d --restart=always -p 9876:9876 -v /var/run/docker.sock:/var/run/docker.sock -v ddns-go_data:/root jeessy/ddns-go
+安装docker可视化图形界面汉化版
+sudo docker volume create portainer_data
+sudo docker run -d --restart=always --name="portainer" -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock 6053537/portainer-ce
