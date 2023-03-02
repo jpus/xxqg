@@ -30,6 +30,6 @@
 
 [Snap方式安装的docker更换国内镜像](https://blog.csdn.net/mazq024/article/details/127875139?spm=1001.2101.3001.6650.16&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-16-127875139-blog-128043242.pc_relevant_aa2&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-16-127875139-blog-128043242.pc_relevant_aa2&utm_relevant_index=23)
 
-[创建桌面快捷方式]([https://blog.csdn.net/qq_45104014/article/details/127866898](https://blog.csdn.net/qq_42952079/article/details/125381405))
+[创建桌面快捷方式](https://blog.csdn.net/qq_42952079/article/details/125381405)
 
 
