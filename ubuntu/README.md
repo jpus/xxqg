@@ -32,4 +32,6 @@
 
 [创建桌面快捷方式](https://blog.csdn.net/qq_42952079/article/details/125381405)
 
+[SCP、NFS、TFTP服务器配置及客户端使用](https://blog.csdn.net/weixin_50496505/article/details/123786123)
+
 
