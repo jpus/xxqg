@@ -34,4 +34,6 @@
 
 [SCP、NFS、TFTP服务器配置及客户端使用](https://blog.csdn.net/weixin_50496505/article/details/123786123)
 
+[SCP命令](https://blog.csdn.net/qq_42971035/article/details/128171117)
+
 
