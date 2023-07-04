@@ -1,0 +1,29 @@
+通过 Cloudflare Workers 部署 V2ray 代理，实现科学上网
+https://nb.adone.eu.org/article/edgetunnel
+https://github.com/zizifn/edgetunnel/tree/main/src
+
+
+################################################################
+v2ray
+---------------------------------------------------------------
+vless://${userID}@${hostName}:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}
+---------------------------------------------------------------
+################################################################
+clash-meta
+---------------------------------------------------------------
+- type: vless
+  name: ${hostName}
+  server: ${hostName}
+  port: 443
+  uuid: ${userID}
+  network: ws
+  tls: true
+  udp: false
+  sni: ${hostName}
+  client-fingerprint: chrome
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      host: ${hostName}
+---------------------------------------------------------------
+################################################################
