@@ -1,0 +1,3 @@
+出现问题
+wget returned 4. * opkg_download: Check your network settings and connectivity.
+修改/var/resolv.conf nameserver 114.114.114.114 或者 223.5.5.5 223.6.6.6
