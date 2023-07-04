@@ -1,0 +1,24 @@
+proxies:
+  - type: vless
+    name: vless
+    server: 域名
+    port: 443
+    uuid: XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+    network: ws
+    tls: true
+    udp: false
+    sni: 域名
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        host: 域名
+  - name: WARP
+    type: wireguard
+    server: 优选IP
+    port: 优选IP的端口
+    ip: 172.16.0.2
+    public-key: 公匙
+    private-key: 私匙
+    mtu: 1280
+    udp: true
