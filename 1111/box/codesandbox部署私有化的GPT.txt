@@ -1,0 +1,15 @@
+实现过程：
+1、拉取镜像
+docker pull ramonvc/freegpt-webui
+2、启动容器
+docker run -p 1338:1338 ramonvc/freegpt-webui
+3.复制右侧显示的网站输入自己的浏览器中
+-----------------------------------docker stop c99c1a22b72a
+具体操作流程：
+1、搜索安装docker
+2、按着ctrl+k搜索Type a command，点击其并在框内粘贴docker pull ramonvc/freegpt-webui，回车后等待安装。
+3、安装完后按着ctrl+p回退搜索Type a command 点击其并在框内粘贴docker run -p 1338:1338 ramonvc/freegpt-webui，启动。
+
+其它一些命令:
+docker ps(查看运行的容器id)
+docker stop c99c1a22b72a(停止运行id为c99c1a22b72a的容器)
