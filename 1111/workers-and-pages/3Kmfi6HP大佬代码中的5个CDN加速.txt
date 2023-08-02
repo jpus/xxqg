@@ -1,0 +1,11 @@
+cdn-all.xn--b6gac.eu.org
+cdn.xn--b6gac.eu.org
+cdn-b100.xn--b6gac.eu.org
+edgetunnel.anycast.eu.org
+cdn.anycast.eu.org
+
+Cloudflare支持的HTTP端口：80，8080，8880，2052，2082，2086，2095。
+Cloudflare支持的HTTPS端口：443，2053，2083，2087，2096，8443。
+worker-vless       修改103行端口
+worker-with-socks5     修改121行的端口
+如果修改的端口不在上述范围内，则无法使用优选IP，只能使用绑定的域名

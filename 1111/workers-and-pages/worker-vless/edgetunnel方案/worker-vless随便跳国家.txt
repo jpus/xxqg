@@ -1,0 +1,19 @@
+//改造了一下代码，让proxyip放到header里，一个worker就能随便跳国家了,第26行修改为
+   proxyIP = request.headers.get('proxyIP');
+//节点信息配置如下
+  - name: US-worker
+    type: vless
+    server: 172.64.135.146
+    port: 443
+    uuid: 1
+    network: ws
+    tls: true
+    skip-cert-verify: false
+    udp: false
+    servername: 1
+    client-fingerprint: chrome
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        proxyIp: 165.1.65.88
+        host: 1
