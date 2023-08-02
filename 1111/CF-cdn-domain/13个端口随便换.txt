@@ -1,0 +1,33 @@
+CF workers vless永久免费节点，支持自定义伪装网页，cdn自选IP经常挂？改用cdn自选域名吧，13个端口随便换，有没有域名无所谓，CF workers vless的一切疑问在本教程都有答案
+视频教程：CF workers vless永久免费节点最终教程：详解四大关键搭建步骤，支持自定义伪装网页，无需自选IP，自选域名多平台一键脚本发布，总结你选择CF workers vless面临的问题。全程高能https://youtu.be/zGi34yDrkxw
+CF-CDN自选域名项目电脑客户端下载地址（包含视频演示的CF workers vless代码）https://github.com/yonggekkk/CF-cdn-domain
+
+1、CF workers vless的流量限制：workers目前有10万次请求限制，但很多人都超过了，还能用。。。
+2、优选域名的有效性：教程已说明两个被干的可能性，如果你平时一直用一个自选域名，且效果能满足你的要求，那别再去优选了，躺平吧。。。
+
+
+服务器地址：doprax分配的域名 ，CDN时填自定义、workers、argo域名或者自选IP
+端口：443
+（无域名？：http端口：可选80、8080、8880、2052、2082、2086、2095，tls必须关闭）
+（https端口：可选443、2053、2083、2087、2096、8443，tls必须开启）
+uuid：变量自定义uuid
+加密方式/算法：ss为chacha20-ietf-poly1305，其他协议默认不变即可
+建议关闭多路复用
+传输协议/方式：ws或者websocket
+伪装域名host：doprax分配的域名或者留空，CDN时填自定义、workers、argo域名
+vless的path路径：/自定义uuid-vl
+传输安全TLS：开启
+sni可不填
+----------------------------无CDN自定义个人域名、无tls
+服务器地址：第三方优选域名
+端口：可选80、8080、8880、2052、2082、2086、2095
+uuid：变量自定义uuid
+加密方式/算法：none
+传输协议/方式：ws或者websocket
+伪装类型：none
+伪装域名host：workers域名
+vless的path路径：/自定义uuid-vl
+传输安全TLS：关闭
+
+
+
