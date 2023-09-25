@@ -1,0 +1,25 @@
+一、在系统-设置-共享-远程桌面，开启远程桌面和远程控制。
+二、使用Xorg显示管理器而不是系统默认的Wayland
+执行以下命令：sudo vim /etc/gdm3/custom.conf
+找到这行内容并#WaylandEnable=false 更该为: WaylandEnable=false
+按ESC键，键入:wq!保存退出。
+三、
+1、安装xrdp和xorg
+sudo apt-get install xrdp xorg
+2、启动xrdp
+sudo systemctl start xrdp
+3、开机启动xrdp
+sudo systemctl enable xrdp
+4、设置防火墙开启xrdp的3389端口
+sudo ufw allow from any to any port 3389 proto tcp
+5、修改startwm.sh配置
+sudo vim /etc/xrdp/startwm.sh
+将该文档最底下的两行(test和exec开头)注释掉，然后添加新的一行
+gnome-session
+6、安装dconf-editor
+sudo apt-get install dconf-editor
+7.修改Xwrapper.config配置
+sudo vim /etc/X11/Xwrapper.config
+将allowed_users=console，console改成anybody
+四、禁用屏幕空白和自动屏幕锁定及取消自动登陆，重启主机
+五、WINDOWS系统打开远程桌面应用，选择xorg、远程主机用户名、远程主机系统登陆密码（不是系统随机生成的那个密码），即可远程连接。
